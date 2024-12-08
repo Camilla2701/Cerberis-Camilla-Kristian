@@ -1,0 +1,14 @@
+.menu{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 350px;
+    height: 50px;
+    border-radius: 16;
+}
+.menu__icon{
+    fill: grey;
+}
+.menu__icon--active{
+    fill: green;
+}
