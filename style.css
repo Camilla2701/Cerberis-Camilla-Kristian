@@ -1,14 +1,140 @@
+body{
+    background: var(--backgroundColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+}
+.main{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*buttons*/
+.primaryButton{
+    width: 290px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid var(--primaryButton__border);
+    background: var(--primaryButton__background);
+    color: var(--primaryButton__textColor);
+}
+/*Mobile Menu*/
+.navBar{
+
+    
+}
 .menu{
     list-style: none;
     display: flex;
+    align-items: center;
     justify-content: space-around;
     width: 350px;
     height: 50px;
-    border-radius: 16;
+    border-radius: 16px;
+    box-shadow: var(--box-shadow);
+    padding: 0;
+    background-color: var(--primaryButton__background);
 }
 .menu__icon{
-    fill: grey;
+    fill: var(--iconColor__tertiary);
 }
 .menu__icon--active{
-    fill: green;
+    fill: var(--iconColor__secondary);
+}
+/*Heat source activity card*/
+
+.heatSource__title{
+    align-self: flex-start;
+    padding-inline-start: 40px;
+}
+.heatSourceCard{
+    position: relative;
+    box-shadow: var(--box-shadow);
+    border-radius: 8px;
+    padding-inline: 8px;
+    height: 167px;
+    overflow: hidden;
+    width: 334px ;
+    transition: 0.4s;
+}
+.heatSourceCard.active{
+    height: 220px;
+}
+.heatSourceCard__title{
+    color: var(--text__secondary);
+    margin-block: 16px;
+}
+.heatSourceCard__description{
+    color: var(--text__secondary);
+}
+.heatSourceCard__unfoldButton{
+    position: absolute;
+    bottom: 5px;
+    right: 8px;
+    transition: 0.4s;
+}
+.heatSourceCard__unfoldButton.active{
+    transform: scaleY(-1);
+}
+/*Button Section*/
+.heatSourceButtons{
+    display: flex;
+    justify-content: space-between;
+}
+.heatSourceButtons__button{
+    background-color: var(--primaryButton__inactiveBorder);
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+    border: none;
+}
+.heatSourceButtons__button.active{
+    outline: 4px solid var(--warningGreen);
+    background-color: var(--primaryButton__textColor);
+}
+
+/*Room selection section*/
+.roomSelect__title{
+    align-self: flex-start;
+    padding-inline-start: 40px;
+}
+.roomSelectCard{
+    background: var(--section__primary);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    width: 334px;
+    height: 400px;
+    padding-inline-start: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.roomSelectRooms{
+    height: 255px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    gap: 24px;
+}
+.roomSelectRooms__room{
+    width: 100px;
+    height: 100px;
+    border: 2px solid;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.roomSelectRooms__roomTitle{
+    margin: 0;
+    text-align: center;
+    margin-block: 4px ;
+}
+.roomSelectCard__button{
+    margin-inline: auto;
 }

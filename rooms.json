@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "icon": "/images/roomIcon__sofa.svg",
+        "title": "Living room",
+        "color": "#8facd6"
+    },
+    {
+        "id": "2",
+        "icon": "/images/roomIcon__kitchen.svg",
+        "title": "Kitchen",
+        "color": "#7fc483"
+    },
+    {
+        "id": "3",
+        "icon": "/images/roomIcon__bed.svg",
+        "title": "Camilla's bedroom",
+        "color": "#de94b6"
+    },
+    {
+        "id": "4",
+        "icon": "/images/roomIcon__entrance.svg",
+        "title": "Foyer",
+        "color": "#dbb386"
+    },
+    {
+        "id": "5",
+        "icon": "/images/roomIcon__bathroom.svg",
+        "title": "Bathroom",
+        "color": "#d77575"
+    },
+    {
+        "id": "6",
+        "icon": "/images/roomIcon__bed.svg",
+        "title": "Master bedroom",
+        "color": "#7a9c7a"
+    },
+    {
+        "id": "7",
+        "icon": "/images/roomIcon__bed.svg",
+        "title": "Master bedroom",
+        "color": "#7a9c7a"
+    },
+    {
+        "id": "8",
+        "icon": "/images/roomIcon__bed.svg",
+        "title": "Master bedroom",
+        "color": "#7a9c7a"
+    }
+]

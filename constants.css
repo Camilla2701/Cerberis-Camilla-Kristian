@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  /*background color*/
+  --backgroundColor: #ffffff;
+  /*font colors*/
+  --text__primary: #000000;
+  --text__secondary: #999696;
+  --text__accentRed: #d77575;
+  --text__accentGreen: #7fc483;
+  /*Section background colors*/
+  --section__primary: #ffffff;
+  --section__secondary: #ffffff;
+  --section__tertiary: #ffffff;
+  /*Global boxshadow*/
+  --box-shadow: 0px 0px 13.100000381469727px 0px rgba(0, 0, 0, 25%);
+  /*Button colors*/
+  --primaryButton__background: #ffffff;
+  --primaryButton__border: #65c279;
+  --primaryButton__inactiveBorder: #a2a2a2;
+  --primaryButton__inactiveBackground: #ffffff;
+  --primaryButton__textColor: #65c279;
+  --primaryButton__inactiveTextColor: #a2a2a2;
+  /*Room colors*/
+  --pink: #de94b6;
+  --blue: #8facd6;
+  --green200: #7fc483;
+  --green300: #7a9c7a;
+  --orange: #dbb386;
+  --red: #d77575;
+  /*Warning colors*/
+  --warningRed: #ff0000;
+  --warningYellow: #ffe500;
+  --warningGreen: #40fa56;
+  /*Icon colors*/
+  --iconColor__primary: #ffffff;
+  --iconColor__secondary: #7fc483;
+  --iconColor__tertiary: #babdc1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundColor: linear-gradient(
+      174.094deg,
+      #29332a 0%,
+      #354436 25%,
+      #415243 48%,
+      #344235 82%,
+      #29332a 100%
+    );
+    /* font colors */
+    --text__primary: #ffffff;
+    --text__secondary: #babdc1;
+    --text__accentRed: #d77575;
+    --text__accentGreen: #7fc483;
+    /*Section background colors*/
+    --section__primary: #2f382f;
+    --section__secondary: #48584a;
+    --section__tertiary: #616962;
+    /*Button colors*/
+    --primaryButton__background: #ffffff00;
+    --primaryButton__border: #65c279;
+    --primaryButton__inactiveBorder: #a2a2a200;
+    --primaryButton__inactiveBackground: #616962;
+    --primaryButton__textColor: #65c279;
+    --primaryButton__inactiveTextColor: #a2a2a2;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 20px;
+}
+h4{
+  font-size: 16px;
+  font-weight: 300;
+}
+
+p {
+  font-size: 16px;
+}
