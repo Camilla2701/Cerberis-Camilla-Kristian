@@ -21,6 +21,7 @@
   --primaryButton__inactiveBackground: #ffffff;
   --primaryButton__textColor: #65c279;
   --primaryButton__inactiveTextColor: #a2a2a2;
+  --secondaryButton__background: #ffffff;
   /*Room colors*/
   --pink: #de94b6;
   --blue: #8facd6;
@@ -64,6 +65,7 @@
     --primaryButton__inactiveBackground: #616962;
     --primaryButton__textColor: #65c279;
     --primaryButton__inactiveTextColor: #a2a2a2;
+    --secondaryButton__background: #709D72;
     /*icon colors*/
     --iconColor__tertiary: #ffffff;
   }

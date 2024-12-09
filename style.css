@@ -7,10 +7,13 @@ body{
 }
 .main{
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+footer{
+    height: 100px;
+    width: 100vw;
 }
 /*buttons*/
 .primaryButton{
@@ -19,7 +22,12 @@ body{
     border-radius: 12px;
     border: 2px solid var(--primaryButton__border);
     background: var(--primaryButton__background);
-    color: var(--primaryButton__textColor);
+    color: var(--primaryButton__inactiveTextColor);
+}
+.primaryButton--inactive{
+    border: 2px solid var(--primaryButton__inactiveBorder);
+    background: var(--primaryButton__inactiveBackground);
+    color: var(--primaryButton__inactiveTextColor);
 }
 .secondaryButton{
     height: 45px;
@@ -44,7 +52,7 @@ body{
     border-radius: 16px;
     box-shadow: var(--box-shadow);
     padding: 0;
-    background-color: var(--primaryButton__background);
+    background-color: var(--section__primary);
 }
 .menu__icon{
     fill: var(--iconColor__tertiary);
@@ -212,4 +220,76 @@ body{
 }
 .addRoomCard__title{
     margin: 0;
+}
+
+.modifyTempature{
+    width: 335px;
+    height: 440px;
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.modifyTempature__currentTempature{
+    font-size: 64px;
+    margin: 0;
+    color: var(--text__primary);
+    font-weight: 300;
+    text-align: center;
+}
+.modifyTempature__tempature{
+    background-image: url(images/tempature.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 335px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modifyTempature__title{
+    margin: 0;
+    text-align: center;
+    color: var(--text__primary);
+}
+.modifyTempature__buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 32px;
+}
+.modifyTempature__button{
+    height: 46px;
+    width: 46px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    background: var(--secondaryButton__background);
+    color: var(--text__primary);
+    box-shadow: var(--box-shadow);
+}
+.modifyTempature__button--round{
+    border-radius: 50px;
+    margin-inline: 10px;
+}
+
+.modifyTempature__information{
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid #a2a2a2;
+    margin-block-end: 32px;
+}
+
+.information__allData{
+    width: 100px;
+    text-align: center;
+    color: var(--text__primary);
+}
+.information__time{
+    border-right: 1px solid #a2a2a2;
+}
+.information__currentTemp{
+    border-right: 1px solid #a2a2a2;
 }
