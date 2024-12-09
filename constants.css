@@ -75,15 +75,18 @@ body {
 
 h1 {
   font-size: 16px;
+  color: var(--text__primary);
 }
 
 h2 {
   font-size: 24px;
   font-weight: 300;
+  color: var(--text__primary);
 }
 
 h3 {
   font-size: 20px;
+  color: var(--text__secondary);
 }
 h4{
   font-size: 16px;

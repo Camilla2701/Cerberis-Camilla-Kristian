@@ -23,8 +23,8 @@ body{
 }
 /*Mobile Menu*/
 .navBar{
-
-    
+    position: fixed;
+    bottom: 0;  
 }
 .menu{
     list-style: none;

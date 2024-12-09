@@ -39,7 +39,7 @@ function populateDOM(data){
         title.textContent = item.title
         card.appendChild(title)
         if (item.color) {
-            title.style.color = item.color; // Change title color
+            title.style.color = item.color;
         }
 
        
