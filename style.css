@@ -21,6 +21,14 @@ body{
     background: var(--primaryButton__background);
     color: var(--primaryButton__textColor);
 }
+.secondaryButton{
+    height: 45px;
+    width: 155px;
+    background-color: var(--primaryButton__background);
+    border: 2px solid var(--primaryButton__border);
+    border-radius: 12px;
+    color: var(--primaryButton__textColor);
+}
 /*Mobile Menu*/
 .navBar{
     position: fixed;
@@ -102,6 +110,7 @@ body{
     padding-inline-start: 40px;
 }
 .roomSelectCard{
+    position: relative;
     background: var(--section__primary);
     box-shadow: var(--box-shadow);
     border-radius: 12px;
@@ -137,4 +146,70 @@ body{
 }
 .roomSelectCard__button{
     margin-inline: auto;
+}
+.addRoomCard{
+    position: absolute;
+    left: 8%;
+    width: 290px;
+    height: 460px;
+    background: var(--backgroundColor);
+    box-shadow: var(--box-shadow);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+    transform: scale(0);
+    transition: 0.4s;
+}
+.addRoomCard.active{
+    transform: scale(1);
+}
+.addRoomCard__closeSection{
+    fill: var(--iconColor__tertiary);
+    align-self: flex-end;
+    margin-inline-end: 30px;
+}
+.addRoomCard__addName{
+    box-sizing: border-box;
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    padding-inline-start: 30px;
+    color: var(--text__secondary);
+}
+.addRoomCard__addName:focus{
+    outline: none;
+}
+.addRoomCard__addIcon{
+    box-sizing: border-box;
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    padding-inline-start: 30px;
+    color: var(--text__secondary);
+}
+.addRoomCard__addIcon:focus{
+    outline: none;
+}
+.addRoomCard__addColor{
+    box-sizing: border-box;
+    width: 230px;
+    height: 50px;
+    border: none;
+    border-radius: 12px;
+    background-color: #F2F2F2;
+    padding-inline-start: 30px;
+    color: var(--text__secondary);
+}
+.addRoomCard__addColor:focus{
+    outline: none;
+}
+.addRoomCard__title{
+    margin: 0;
 }

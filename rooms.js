@@ -41,7 +41,13 @@ function populateDOM(data){
         if (item.color) {
             title.style.color = item.color;
         }
-
-       
+        
+        fetch(item.icon)
+        .then(response => response.text())
+        .then(svg => {
+        card.innerHTML = `${svg} <h4 class = "roomSelectRooms__roomTitle">${item.title}</h4>`; // Embed the SVG directly into the DOM
+        const svgElement = card.querySelector("svg");
+        svgElement.querySelector("path").style.fill = item.color;
+         });       
     })
 }

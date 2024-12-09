@@ -42,13 +42,34 @@
         </section>
         <h2 class="roomSelect__title">Room Select</h2>
         <section class="roomSelectCard">
+            <section class="addRoomCard">
+                <svg class="addRoomCard__closeSection" width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2.38596 17L0 14.614L6.13534 8.4787L0 2.38596L2.38596 0L8.5213 6.13534L14.614 0L17 2.38596L10.8647 8.4787L17 14.614L14.614 17L8.5213 10.8647L2.38596 17Z"/>
+                    </svg>
+                    
+                <h2 class="addRoomCard__title">Choose room name</h2>
+                <input class="addRoomCard__addName" type="text" placeholder="Room name">
+                <h2 class="addRoomCard__title">Choose room icon</h2>
+                <select class="addRoomCard__addIcon" name="roomIcons">
+                    <option value="bedroom">Bedroom</option>
+                    <option value="bathroom">Bathroom</option>
+                    <option value="kitchen">Kitchen</option>
+                    <option value="foyer">Foyer</option>
+                    <option value="living room">Living room</option>
+                  </select>
+                <h2 class="addRoomCard__title">Choose room color</h2>
+                <select class="addRoomCard__addColor" name="roomColors">
+                    <option value="red">Red</option>
+                    <option value="light green">Light green</option>
+                    <option value="dark green">Dark green</option>
+                    <option value="blue">Blue</option>
+                    <option value="pink">Pink</option>
+                  </select>
+                <button class="secondaryButton addRoomCard__button">Add</button>
+            </section>
             <section class="roomSelectRooms">
-         
             </section>
             <button class="primaryButton roomSelectCard__button">Add Room+</button>
-        </section>
-        <section class="addRoomCard">
-            
         </section>
     </main>
         <nav class="navBar">
@@ -75,5 +96,6 @@
         </nav>
         <script src="heatSource.js"></script>
         <script src="rooms.js"></script>
+        <script src="addRoom.js"></script>
 </body>
 </html>
