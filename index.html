@@ -1,15 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cerberis</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="constants.css">
-</head>
-<body>
+    <link rel="stylesheet" href="constants.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="loginScreen.css" />
+    <script src="logIn.js" defer></script>
+  </head>
+  <body>
     <header class="header"></header>
-    <main class="main"></main>
+    <main class="main">
+      <img
+        src="images/lightmodeLogo.svg"
+        alt="Light mode logo"
+        class="logo light-mode"
+      />
+
+      <img
+        src="images/darkmodeLogo.svg"
+        alt="Dark mode logo"
+        class="logo dark-mode"
+      />
+
+      <h3>Sign in</h3>
+      <form>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Username"
+          required
+          class="input-field"
+        />
+        <input
+          type="password"
+          id="password"
+          name="password"
+          placeholder="Password"
+          required
+          class="input-field"
+        />
+        <p>Forgot password?</p>
+        <button class="primaryButton logInButton" type="button">Login</button>
+      </form>
+      <p>Dont have an account?</p>
+      <p class="signUp">Sign up here</p>
+    </main>
     <footer class="footer"></footer>
-</body>
+  </body>
 </html>

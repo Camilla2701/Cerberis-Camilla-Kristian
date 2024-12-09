@@ -1,0 +1,63 @@
+.main {
+  margin-top: 5rem;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: var(--text__primary);
+}
+
+.input-field {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  border: none;
+  width: 70%;
+  padding: 18px;
+  border-radius: 12px;
+  background-color: #f2f2f2;
+  color: black;
+  outline: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input-field::placeholder {
+  --iconColor__tertiary: #babdc1;
+  font-weight: bold;
+}
+
+.logInButton {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.signUp {
+  color: var(--green200);
+}
+
+p {
+  color: var(--text__secondary);
+}
+
+/* General logo styling */
+.logo {
+  width: 250px;
+  height: auto;
+  display: none;
+}
+
+/* Lightmode logo */
+.light-mode {
+  display: block;
+}
+
+/* Darkmode logo */
+@media (prefers-color-scheme: dark) {
+  .light-mode {
+    display: none;
+  }
+
+  .dark-mode {
+    display: block;
+  }
+}
