@@ -1,12 +1,15 @@
 body{
     background: var(--backgroundColor);
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    width: 100vw;
+    height: 100vh;
 }
 .main{
-    width: 100vw;
+    width: 390px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -22,12 +25,7 @@ footer{
     border-radius: 12px;
     border: 2px solid var(--primaryButton__border);
     background: var(--primaryButton__background);
-    color: var(--primaryButton__inactiveTextColor);
-}
-.primaryButton--inactive{
-    border: 2px solid var(--primaryButton__inactiveBorder);
-    background: var(--primaryButton__inactiveBackground);
-    color: var(--primaryButton__inactiveTextColor);
+    color: var(--primaryButton__textColor);
 }
 .secondaryButton{
     height: 45px;
@@ -37,6 +35,12 @@ footer{
     border-radius: 12px;
     color: var(--primaryButton__textColor);
 }
+.primaryButton--inactive{
+    border: 2px solid var(--primaryButton__inactiveBorder);
+    background: var(--primaryButton__inactiveBackground);
+    color: var(--primaryButton__inactiveTextColor);
+}
+
 /*Mobile Menu*/
 .navBar{
     position: fixed;
@@ -292,4 +296,55 @@ footer{
 }
 .information__currentTemp{
     border-right: 1px solid #a2a2a2;
+}
+.profile{
+    width: 340px;
+    height: 360px;
+    background-image: url(images/Background-profile.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    padding-block-start: 130px;
+    display: flex;
+    flex-direction: column;
+}
+.profile__img{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+}
+.profile__logo{
+    position: absolute;
+    left: 165px;
+    top: 40px;
+}
+.profile__logo--dark{
+    display: none;
+}
+.profile__information{
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #a2a2a2;
+    width: 90%;
+}
+.profile__description{
+    display: flex;
+    justify-content: space-around;
+}
+.description__title{
+    color: var(--text__primary);
+    font-size: 16px;
+    font-weight: 400;
+}
+.addUser__button{
+    margin-block-end: 24px;
+}
+@media (prefers-color-scheme: dark) {
+    .profile{
+        background-image: url(images/bagground-section-dark.svg);
+    }
+    .profile__logo--dark{
+        display: block;
+    }
 }
