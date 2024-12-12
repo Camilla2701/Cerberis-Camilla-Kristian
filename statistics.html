@@ -11,7 +11,49 @@
     <header class="header">
         <h1>Statistics</h1>
     </header>
-    <main class="main"></main>
+    <main class="main">
+        <section class="roomUsage">
+            <h2 class="roomUsage__title"><svg width="22" height="17" viewBox="0 0 22 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13 9.5C12.1667 9.5 11.4583 9.20833 10.875 8.625C10.2917 8.04167 10 7.33333 10 6.5C10 5.66667 10.2917 4.95833 10.875 4.375C11.4583 3.79167 12.1667 3.5 13 3.5C13.8333 3.5 14.5417 3.79167 15.125 4.375C15.7083 4.95833 16 5.66667 16 6.5C16 7.33333 15.7083 8.04167 15.125 8.625C14.5417 9.20833 13.8333 9.5 13 9.5ZM6 12.5C5.45 12.5 4.97917 12.3042 4.5875 11.9125C4.19583 11.5208 4 11.05 4 10.5V2.5C4 1.95 4.19583 1.47917 4.5875 1.0875C4.97917 0.695833 5.45 0.5 6 0.5H20C20.55 0.5 21.0208 0.695833 21.4125 1.0875C21.8042 1.47917 22 1.95 22 2.5V10.5C22 11.05 21.8042 11.5208 21.4125 11.9125C21.0208 12.3042 20.55 12.5 20 12.5H6ZM8 10.5H18C18 9.95 18.1958 9.47917 18.5875 9.0875C18.9792 8.69583 19.45 8.5 20 8.5V4.5C19.45 4.5 18.9792 4.30417 18.5875 3.9125C18.1958 3.52083 18 3.05 18 2.5H8C8 3.05 7.80417 3.52083 7.4125 3.9125C7.02083 4.30417 6.55 4.5 6 4.5V8.5C6.55 8.5 7.02083 8.69583 7.4125 9.0875C7.80417 9.47917 8 9.95 8 10.5ZM19 16.5H2C1.45 16.5 0.979167 16.3042 0.5875 15.9125C0.195833 15.5208 0 15.05 0 14.5V3.5H2V14.5H19V16.5Z" fill="#65C279"/>
+                </svg>
+                Your expenses:</h2>
+                <h3 class="roomUsage__amount">1200kr</h3>
+                <p class="roomUsage__date">March 2024</p>
+                <img src="images/roomUsage.png" alt="Screenshot of room usage" class="roomUsage__img">
+                <img src="images/roomUsage--dark.png" alt="Screenshot of room usage in dark" class="roomUsage__img roomUsage__img--dark">
+        </section>
+        <section class="dailyUsage">
+            <h2 class="dailyUsage__title"><svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.6 14.2L15.25 8.55L13.825 7.125L9.6 11.35L7.475 9.225L6.05 10.65L9.6 14.2ZM10.65 19.65C9.4 19.65 8.22917 19.4125 7.1375 18.9375C6.04583 18.4625 5.09583 17.8208 4.2875 17.0125C3.47917 16.2042 2.8375 15.2542 2.3625 14.1625C1.8875 13.0708 1.65 11.9 1.65 10.65C1.65 9.4 1.8875 8.22917 2.3625 7.1375C2.8375 6.04583 3.47917 5.09583 4.2875 4.2875C5.09583 3.47917 6.04583 2.8375 7.1375 2.3625C8.22917 1.8875 9.4 1.65 10.65 1.65C11.9 1.65 13.0708 1.8875 14.1625 2.3625C15.2542 2.8375 16.2042 3.47917 17.0125 4.2875C17.8208 5.09583 18.4625 6.04583 18.9375 7.1375C19.4125 8.22917 19.65 9.4 19.65 10.65C19.65 11.9 19.4125 13.0708 18.9375 14.1625C18.4625 15.2542 17.8208 16.2042 17.0125 17.0125C16.2042 17.8208 15.2542 18.4625 14.1625 18.9375C13.0708 19.4125 11.9 19.65 10.65 19.65ZM4.25 0L5.65 1.4L1.4 5.65L0 4.25L4.25 0ZM17.05 0L21.3 4.25L19.9 5.65L15.65 1.4L17.05 0ZM10.65 17.65C12.6 17.65 14.2542 16.9708 15.6125 15.6125C16.9708 14.2542 17.65 12.6 17.65 10.65C17.65 8.7 16.9708 7.04583 15.6125 5.6875C14.2542 4.32917 12.6 3.65 10.65 3.65C8.7 3.65 7.04583 4.32917 5.6875 5.6875C4.32917 7.04583 3.65 8.7 3.65 10.65C3.65 12.6 4.32917 14.2542 5.6875 15.6125C7.04583 16.9708 8.7 17.65 10.65 17.65Z" fill="black"/>
+                </svg>                
+                Daily usage:</h2>
+                <h3 class="dailyUsage__amount"><span class="accent--red">10%</span> overuse</h3>
+                <p class="dailyUsage__goal">Goal: 0%</p>
+                <img src="images/dailyUsage.png" alt="Screenshot of room usage" class="dailyUsage__img">
+                <img src="images/dailyUsage--dark.png" alt="Screenshot of room usage in dark" class="dailyUsage__img dailyUsage__img--dark">
+        </section>
+        <section class="overallUsage">
+            <h2 class="overallUsage__title"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 16V8H4V16H0ZM6 16V0H10V16H6ZM12 16V5H16V16H12Z" fill="black"/>
+                </svg>                               
+                Overall usage:</h2>
+                <h3 class="overallUsage__amount"><span class="accent--grey">Average usage:</span> <span class="accent--green">5kWh</span></h3>
+                <p class="overallUsage__week">Week 28</p>
+                <img src="images/overallUsage.png" alt="Screenshot of room usage" class="overallUsage__img">
+                <img src="images/overallUsage--dark.png" alt="Screenshot of room usage in dark" class="overallUsage__img overallUsage__img--dark">
+        </section>
+        <section class="heatingPrices">
+            <h2 class="heatingPrices__title"><svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9.81227 16.0394C9.50521 16.3465 9.12474 16.5 8.67084 16.5C8.21694 16.5 7.83646 16.3465 7.52941 16.0394L0.480601 8.99061C0.333751 8.84376 0.216938 8.67021 0.130163 8.46996C0.0433876 8.26971 0 8.05611 0 7.82916V2.102C0 1.66145 0.156863 1.28431 0.470588 0.970588C0.784314 0.656863 1.16145 0.5 1.602 0.5H7.32916C7.55611 0.5 7.76971 0.543388 7.96996 0.630163C8.17021 0.716938 8.34376 0.833751 8.49061 0.980601L15.5394 8.04944C15.8465 8.35649 16 8.73363 16 9.18085C16 9.62808 15.8465 10.0052 15.5394 10.3123L9.81227 16.0394ZM8.67084 14.918L14.398 9.19086L7.32916 2.102H1.602V7.82916L8.67084 14.918ZM3.60451 5.30601C3.93826 5.30601 4.22194 5.18919 4.45557 4.95557C4.68919 4.72194 4.80601 4.43826 4.80601 4.10451C4.80601 3.77076 4.68919 3.48707 4.45557 3.25344C4.22194 3.01982 3.93826 2.903 3.60451 2.903C3.27076 2.903 2.98707 3.01982 2.75344 3.25344C2.51982 3.48707 2.403 3.77076 2.403 4.10451C2.403 4.43826 2.51982 4.72194 2.75344 4.95557C2.98707 5.18919 3.27076 5.30601 3.60451 5.30601Z" fill="black"/>
+                </svg>
+                                              
+                Heating prices:</h2>
+                <h3 class="heatingPrices__amount"><span class="accent--grey">Average price:</span> <span class="accent--green">5kr/kWh</span></h3>
+                <p class="heatingPrices__date">02/12/2024</p>
+                <img src="images/heatingPrices.png" alt="Screenshot of room usage" class="heatingPrices__img">
+                <img src="images/heatingPrices--dark.png" alt="Screenshot of room usage in dark" class="heatingPrices__img heatingPrices__img--dark">
+        </section>
+    </main>
     <nav class="navBar">
         <ul class="menu">
             <li class="menu__item">

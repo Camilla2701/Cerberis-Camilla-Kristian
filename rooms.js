@@ -21,7 +21,8 @@ const container = document.querySelector(".roomSelectRooms")
 function populateDOM(data){
     console.log(data)
     data.forEach((item) => {
-        const card = document.createElement("section")
+        const card = document.createElement("a")
+        card.href = "#modifyTempature"
         card.classList.add("roomSelectRooms__room")
         container.appendChild(card)
 
