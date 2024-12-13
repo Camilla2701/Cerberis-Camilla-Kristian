@@ -64,6 +64,7 @@ footer{
 .menu__icon--active{
     fill: var(--iconColor__secondary);
 }
+
 /*Heat source activity card*/
 
 .heatSource__title{
@@ -98,7 +99,9 @@ footer{
 .heatSourceCard__unfoldButton.active{
     transform: scaleY(-1);
 }
-/*Button Section*/
+
+/*Heatsource section*/
+
 .heatSourceButtons{
     display: flex;
     justify-content: space-between;
@@ -158,6 +161,9 @@ footer{
 .roomSelectCard__button{
     margin-inline: auto;
 }
+
+/*Add new room pop up section*/
+
 .addRoomCard{
     position: absolute;
     left: 8%;
@@ -224,6 +230,8 @@ footer{
 .addRoomCard__title{
     margin: 0;
 }
+
+/*Modify tempature section*/
 
 .modifyTempature{
     width: 335px;
@@ -298,6 +306,9 @@ footer{
 .information__currentTemp{
     border-right: 1px solid #a2a2a2;
 }
+
+/*Profile page*/
+
 .profile{
     width: 340px;
     height: 360px;
@@ -341,9 +352,12 @@ footer{
 .addUser__button{
     margin-block-end: 24px;
 }
+
+/*Statistics page - Note that this is NOT coded very well, all the graphs are images*/
+
 .roomUsage{
-    width: 100vw;
     margin-block-end: 32px;
+    padding-inline-start: 16px;
 }
 .roomUsage__img{
     width: 90%;
@@ -352,7 +366,7 @@ footer{
     display: none;
 }
 .dailyUsage__img{
-    width: 100%;
+    width: 90%;
 }
 .accent--red{
     color: var(--text__accentRed);
@@ -362,6 +376,7 @@ footer{
 }
 .dailyUsage{
     margin-block-end: 32px;
+    padding-inline-start: 16px;
 }
 .accent--grey{
     color: var(--text__secondary);
@@ -371,6 +386,7 @@ footer{
 }
 .overallUsage{
     margin-block-end: 32px;
+    padding-inline-start: 16px;
 }
 .overallUsage__img{
     width: 95%;
@@ -386,7 +402,10 @@ footer{
 }
 .heatingPrices{
     margin-block-end: 120px;
+    padding-inline-start: 16px;
 }
+
+/*Darkmode*/
 @media (prefers-color-scheme: dark) {
     .profile{
         background-image: url(images/bagground-section-dark.svg);
