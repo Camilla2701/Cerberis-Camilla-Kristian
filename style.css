@@ -265,6 +265,7 @@ footer{
     margin-block-end: 32px;
 }
 .modifyTempature__button{
+    text-align: center;
     height: 46px;
     width: 46px;
     font-size: 16px;
